@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    <title>Schedule</title>
+    <style>
+      .jumbotron {
+        background-color: #f4511e; /* Orange */
+        color: #ffffff;
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="1home.html"><b>Online Course Support System</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="1home.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+				        <li>
+			               <a class="nav-link" href="contactus.html"> ContactUs <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+
+              <button type="button" class="btn btn-light" >
+			               <a href="1Home.html">Log out</a>
+              </button>
+          </div>
+      </nav>
+      <section class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Add Schedule</h1>
+          <p class="lead text-muted"></p>
+          <ul class="nav nav-pills" id="pills-tab" role="tablist"></ul>
+          </div>
+      </section>
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="#demo" data-toggle="collapse">
+            <img src="1.png" class="img-circle person">
+          </a>
+          <div id="demo" class="collapse">
+            <p>Combining parts to make a new whole</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div></div>
+
+        <div class="row">
+            <div class="col-sm-4">
+          <a href="#demo2" data-toggle="collapse">
+            <img src="2.png" class="img-circle person">
+          </a>
+          <div id="demo2" class="collapse">
+            <p>Judging the value of information or ideas.</p>
+            <p></p>
+            <p></p>
+          </div></div></div>
+
+        <div class="row"> <div class="col-sm-4">
+          <a href="#demo3" data-toggle="collapse">
+            <img src="3.png" class="img-circle person">
+          </a>
+          <div id="demo3" class="collapse">
+            <p>Breaking down information into its various components.</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div> </div>
+        <div class="row"> <div class="col-sm-4">
+                <a href="#demo4" data-toggle="collapse">
+                  <img src="4.png" class="img-circle person">
+                </a>
+                <div id="demo4" class="collapse">
+                  <p>Applying the facts, rules, concepts and ideas.</p>
+                  <p></p>
+                  <p</p>
+                </div>
+              </div> </div>
+              <div class="row"> <div class="col-sm-4">
+                    <a href="#demo5" data-toggle="collapse">
+                      <img src="5.png" class="img-circle person">
+                    </a>
+                    <div id="demo5" class="collapse">
+                      <p>Pertains mostly understanding concepts and hopefull explain something in their own words</p>
+                      <p></p>
+                      <p></p>
+                    </div>
+                  </div> </div>
+                  <div class="row"> <div class="col-sm-4">
+                        <a href="#demo6" data-toggle="collapse">
+                          <img src="6.png" class="img-circle person">
+                        </a>
+                        <div id="demo6" class="collapse">
+                          <p>Students will be able in the long run and decide things on their own pertaining to the topic</p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                      </div> </div>
+</div>
+<br><br>
+      <div class="container">
+        <div class="col-lg-12 well">
+              <form>
+              <div class = "form-group col" >
+                <label>Week: </label>
+                <div class = "col-sm-2 form-group">
+                  <select id="subject" name="subject" class="form-control" required="required">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+              </div>
+              <form>
+
+              </form>
+
+              <div class="form-group col">
+                <label>Topics: </label>
+                <div class="col-sm-6 form-group">
+                  <textarea placeholder="Topic 1" rows="1" class="form-control"></textarea>
+                  <textarea placeholder="Topic 2" rows="1" class="form-control"></textarea>
+                  <textarea placeholder="Topic 3" rows="1" class="form-control"></textarea>
+
+                </div>
+
+              </div>
+
+              <div class="form-group col">
+                <label>Duration: </label>
+                <div class="col-sm-4 form-group">
+                  <textarea placeholder="Duration" rows="1" class="form-control"></textarea>
+                </div>
+
+              </div>
+
+
+                <div class="form-group col-sm-2">
+                  <label>Teaching Method: </label>
+                  <br>
+                    <div class="form-check col-sm-6">
+                      <input type="checkbox" class="form-check-input" value=" ">
+                      <label>Lecture</label>
+                      <input type="checkbox" class="form-check-input" value=" ">
+                      <label>Group Activity</label>
+                      <input type="checkbox" class="form-check-input" value=" ">
+                      <label>Presentation</label>
+                    </div>
+                </div>
+
+
+                            <div class="form-group col-sm-2">
+                                  <label>Evaluation: </label>
+                                  <br>
+                                    <div class="form-check col-sm-6">
+
+                                              <select id="eval" name="eval" class="form-control" required="required">
+                                                <option value="PopQuiz">Pop Quiz</option>
+                                                <option value="Class Activity">Class Activity</option>
+                                                <option value="Written Exam">Written Exam</option>
+                                                <option value="Assignment">Assigment</option>
+                                                <option value="Project">Project</option>
+                                              </select>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                <div class="form-group col-sm-2">
+                  <label>Instructors: </label>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Instructor Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Prof.Xavier</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Dr.Strange</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Mr.Charles</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <br>
+
+                  <a href="Coursepage.html" button type="button" class="btn btn-success"> Save </a>
+                  <a href="1Home.html" button type="button" class="btn btn-info" > Home </a>
+
+            </form>
+        </div>
+
+
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Libraries -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </body>
+</html>

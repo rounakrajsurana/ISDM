@@ -1,0 +1,21 @@
+p {
+color: red;
+}
+
+.ice-pink {
+  color: pink;
+}
+
+.blackground-blue{
+  background-color: blue;
+}
+
+body{
+  background-color: yellow;
+}
+.button:focus
+{
+    font-size: 13px;
+    color:orange;
+}
+
