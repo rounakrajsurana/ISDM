@@ -1,0 +1,29 @@
+CSS should be first in the head
+Javascript in the body
+> order is important. : bootstrap need to have jqwery before bootstraP. order is top to bottom
+
+Bootstrap wrap all content
+if you need to add more row.. declare <div class row
+
+
+w3 school to learn about the css commands
+
+padding:100px 10px 100px 10px
+
+
+offset: free space infront of your column
+bootstrap website: menu navbar
+
+margin: To create 
+Padding: to create space outside
+
+thead: table header
+th : bold text
+scope is for specific coloumn
+
+
+td: body normal text
+scope for row to specific row.
+
+$ : it means ID
+if there is no $ it means just variable

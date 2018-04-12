@@ -33,12 +33,18 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
-
+				<li class="nav-item active">
+                  <a class="nav-link" href="Dashboard.php"> Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+				<li class="nav-item active">
+                  <a class="nav-link" href="contactus.html">Contact us <span class="sr-only">(current)</span></a>
+                </li>
 
               </ul>
 
-			  <button type="button" class="btn btn-light">
-            <a href="1Home.html">Log Out</a>
+
+			 <button type="button" class="btn btn-light">
+            <a href="1Home.php">Log Out<span class="glyphicon glyphicon-user">(current)</span></a>
         </button>
 
           </div>
@@ -122,7 +128,7 @@
 
 <div class="col-lg-12 well">
 <div class="row">
-      <form>
+      <form action="display.php" method="post">
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-6 form-group">
@@ -197,7 +203,6 @@
                     </select>
                 </div>
 
-            
           </div>
 
 
@@ -225,7 +230,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
     <!-- Custom -->
-   
+
     <script>
       $(document).ready(function () {
           var $language_control = $("#subject_others");

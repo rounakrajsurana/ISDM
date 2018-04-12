@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Schedule</title>
     <style>
       .jumbotron {
@@ -29,19 +31,29 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="1home.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
-				        <li>
-			               <a class="nav-link" href="contactus.html"> ContactUs <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
 
-              <button type="button" class="btn btn-light" >
+                <li>
+                <a class="nav-link" href="2Dashbard.php">Dashboard<span class="sr-only">(current)</span></a>
+              </li>
+
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="nav-link" href="contactus.html"> ContactUs <span class="sr-only">(current)</span></a>
+              </li>
+              <li>
+                <a class="nav-link" href="logout.php">Log Out</a>
+              </li>
+          </ul>
+
+              <!-- <button type="button" class="btn btn-light" >
 			               <a href="1Home.html">Log out</a>
-              </button>
+              </button> -->
           </div>
       </nav>
       <section class="jumbotron jumbotron-fluid text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Add Schedule</h1>
+          <h1 class="jumbotron-heading">Add Schedule and Design</h1>
           <p class="lead text-muted"></p>
           <ul class="nav nav-pills" id="pills-tab" role="tablist"></ul>
           </div>
@@ -100,7 +112,8 @@
                       <p></p>
                     </div>
                   </div> </div>
-                  <div class="row"> <div class="col-sm-4">
+                  <div class="row">
+				  <div class="col-sm-4">
                         <a href="#demo6" data-toggle="collapse">
                           <img src="6.png" class="img-circle person">
                         </a>
@@ -109,46 +122,250 @@
                           <p></p>
                           <p></p>
                         </div>
-                      </div> </div>
-</div>
-<br><br>
+                    </div> 
+					</div>
+		</div>
+	<br><br>
       <div class="container">
         <div class="col-lg-12 well">
-              <form>
-              <div class = "form-group col" >
-                <label>Week: </label>
-                <div class = "col-sm-2 form-group">
-                  <select id="subject" name="subject" class="form-control" required="required">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
+          <div class="row">
+            <!-- <div class="form-group col"> -->
+              <form action="test.php" method="post">
+                <div class="col-sm-12">
+                  <div class="row">
+
+                  <!-- <div class="row"> -->
+                    <!--Course Name-->
+                    <div class="col-sm-3 form-group">
+                      <label>Topics: </label>
+                      <textarea placeholder="Topic 2"  class="form-control" required/>Topic 1</textarea>
+                    </div>
+
+                    <div class="col-sm-2 form-group">
+                      <label for="BL1">Blooom's Method</label>
+                      <select id="BL1" name="subject" class="form-control" required="required">
+                            <option value="">Create</option>
+                            <option value="">Evaluate </option>
+                            <option value="">Analyze</option>
+                            <option value="">Apply</option>
+                            <option value="">Understand</option>
+                            <option value="">Remember</option>
+                      </select>
+                  </div>
+
+                  <div class="col-sm-2 form-group">
+                    <label for="TeachingMethod">Teaching Method</label>
+                          <select id="TeachingMethod" name="Teachmethod1" class="form-control" required="required">
+
+                              <option value="">Lecture</option>
+                              <option value="">Group Activity </option>
+                              <option value="">Presentation</option>
+                              <option value="">Apply</option>
+                              </label>
+                          </select>
+
+                  </div>
+
+                  <div class="col-sm-2 form-group">
+                    <label for="Evaluation">Evaluation</label>
+                    <select id="Evaluation" name="eval1" class="form-control" required="required">
+
+                        <option value="">Pop Quiz</option>
+                        <option value="">Class Activity</option>
+                        <option value="">Written Exam</option>
+                        <option value="">Assignment</option>
+                        <option value="">Project</option>
+
+                    </select>
+                  </div>
+
+
+                                  <div class="col-sm-2 form-group">
+                                    <label for="Duration">Duration (Weeks)</label>
+                                    <select id="Duration" name="Duration (weeks)" class="form-control" required="required">
+
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                        <option value="">9</option>
+                                        <option value="">10</option>
+
+                                    </select>
+                                  </div>
+
+                </div>
+				
+				
+                <div class="row">
+
+                <!-- <div class="row"> -->
+                  <!--Course Name-->
+                  <div class="col-sm-3 form-group">
+                    <label>Topics: </label>
+                    <textarea placeholder="Topic 1"  class="form-control" required="required">Topic 2</textarea>
+                  </div>
+
+                  <div class="col-sm-2 form-group">
+                    <label for="BL1">Blooom's Method</label>
+                    <select id="BL1" name="subject" class="form-control" required="required">
+                          <option value="">Create</option>
+                          <option value="">Evaluate </option>
+                          <option value="">Analyze</option>
+                          <option value="">Apply</option>
+                          <option value="">Understand</option>
+                          <option value="">Remember</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2 form-group">
+                  <label for="TeachingMethod">Teaching Method</label>
+                        <select id="TeachingMethod" name="Teachmethod1" class="form-control" required="required">
+
+                            <option value="">Lecture</option>
+                            <option value="">Group Activity </option>
+                            <option value="">Presentation</option>
+                            <option value="">Apply</option>
+                            </label>
+                        </select>
+
+                </div>
+
+                <div class="col-sm-2 form-group">
+                  <label for="Evaluation">Evaluation</label>
+                  <select id="Evaluation" name="eval1" class="form-control" required="required">
+
+                      <option value="">Pop Quiz</option>
+                      <option value="">Class Activity</option>
+                      <option value="">Written Exam</option>
+                      <option value="">Assignment</option>
+                      <option value="">Project</option>
+
                   </select>
                 </div>
-              </div>
-              <form>
 
-              </form>
+                <div class="col-sm-2 form-group">
+                  <label for="Evaluation">Duration (weeks)</label>
+                  <select id="Duration" name="Duration (weeks)" class="form-control" required="required">
 
-              <div class="form-group col">
-                <label>Topics: </label>
-                <div class="col-sm-6 form-group">
-                  <textarea placeholder="Topic 1" rows="1" class="form-control"></textarea>
-                  <textarea placeholder="Topic 2" rows="1" class="form-control"></textarea>
-                  <textarea placeholder="Topic 3" rows="1" class="form-control"></textarea>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+
+                  </select>
+                </div>
+
+
+                </div>
+				
+				
+				<!-- topic 3 -->
+				
+				<div class="row">
+
+                <!-- <div class="row"> -->
+                  <!--Course Name-->
+                  <div class="col-sm-3 form-group">
+                    <label>Topics: </label>
+                    <textarea placeholder="Topic 1"  class="form-control" required="required">Topic 3</textarea>
+                  </div>
+
+                  <div class="col-sm-2 form-group">
+                    <label for="BL1">Blooom's Method</label>
+                    <select id="BL1" name="subject" class="form-control" required="required">
+                          <option value="">Create</option>
+                          <option value="">Evaluate </option>
+                          <option value="">Analyze</option>
+                          <option value="">Apply</option>
+                          <option value="">Understand</option>
+                          <option value="">Remember</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2 form-group">
+                  <label for="TeachingMethod">Teaching Method</label>
+                        <select id="TeachingMethod" name="Teachmethod1" class="form-control" required="required">
+
+                            <option value="">Lecture</option>
+                            <option value="">Group Activity </option>
+                            <option value="">Presentation</option>
+                            <option value="">Apply</option>
+                            </label>
+                        </select>
 
                 </div>
 
-              </div>
+                <div class="col-sm-2 form-group">
+                  <label for="Evaluation">Evaluation</label>
+                  <select id="Evaluation" name="eval1" class="form-control" required="required">
 
+                      <option value="">Pop Quiz</option>
+                      <option value="">Class Activity</option>
+                      <option value="">Written Exam</option>
+                      <option value="">Assignment</option>
+                      <option value="">Project</option>
+
+                  </select>
+                </div>
+
+                <div class="col-sm-2 form-group">
+                  <label for="Evaluation">Duration (weeks)</label>
+                  <select id="Duration" name="Duration (weeks)" class="form-control" required="required">
+
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+
+                  </select>
+                </div>
+
+
+                </div>
+				
+
+                <br>
+
+                 
+							<div class="col-lg-25 well">
+								  <form>
+								  <div class = "form-group col" >
+									<label>Week: </label>
+									<div class = "col-sm-2 form-group">
+									  <select id="subject" name="subject" class="form-control" required="required">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									  </select>
+									</div>
+								  </div>
+              
               <div class="form-group col">
                 <label>Duration: </label>
                 <div class="col-sm-4 form-group">
@@ -156,76 +373,56 @@
                 </div>
 
               </div>
+						
 
-
-                <div class="form-group col-sm-2">
-                  <label>Teaching Method: </label>
-                  <br>
-                    <div class="form-check col-sm-6">
-                      <input type="checkbox" class="form-check-input" value=" ">
-                      <label>Lecture</label>
-                      <input type="checkbox" class="form-check-input" value=" ">
-                      <label>Group Activity</label>
-                      <input type="checkbox" class="form-check-input" value=" ">
-                      <label>Presentation</label>
-                    </div>
+              <div class="col-xs-12">
+                <div class="col-md-12" >
+                    <h3> Problem - Solution</h3>
+                    <div id="field">
+                    <div id="field0">
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="action_id">Problem</label>  
+      <div class="col-md-5">
+      <input id="action_id" name="action_id" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    <br><br>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="action_name">Solution</label>  
+      <div class="col-md-5">
+      <input id="action_name" name="action_name" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    <br><br>
+          
+    
+    </div>
+    </div>
+    <!-- Button -->
+    <div class="form-group">
+      <div class="col-md-4">
+        <button id="add-more" name="add-more" class="btn btn-primary">Add More</button>
+      </div>
+    </div>
+    <br><br>
+                  
                 </div>
-
-
-                            <div class="form-group col-sm-2">
-                                  <label>Evaluation: </label>
-                                  <br>
-                                    <div class="form-check col-sm-6">
-
-                                              <select id="eval" name="eval" class="form-control" required="required">
-                                                <option value="PopQuiz">Pop Quiz</option>
-                                                <option value="Class Activity">Class Activity</option>
-                                                <option value="Written Exam">Written Exam</option>
-                                                <option value="Assignment">Assigment</option>
-                                                <option value="Project">Project</option>
-                                              </select>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                <div class="form-group col-sm-2">
-                  <label>Instructors: </label>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Instructor Name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Prof.Xavier</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Dr.Strange</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Mr.Charles</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-
+            </div>
+        </div>
+      
                   <br>
+</div>
 
                   <a href="Coursepage.html" button type="button" class="btn btn-success"> Save </a>
                   <a href="1Home.html" button type="button" class="btn btn-info" > Home </a>
 
             </form>
         </div>
+		</div>
 
 
 
@@ -239,5 +436,49 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    
+    var next = 0;
+    $("#add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = ' <div id="field'+ next +'" name="field'+ next +'"><!-- Text input--><div class="form-group"> <label class="col-md-4 control-label" for="action_id">Problem</label> <div class="col-md-5"> <input id="action_id" name="action_id" type="text" placeholder="" class="form-control input-md"> </div></div><br><br> <!-- Text input--><div class="form-group"> <label class="col-md-4 control-label" for="action_name">Solution</label> <div class="col-md-5"> <input id="action_name" name="action_name" type="text" placeholder="" class="form-control input-md"> </div></div><br><br> </div></div></div>';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >Remove</button></div></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+  
+  
+  
+  
+  
+  
+  
   </body>
 </html>
