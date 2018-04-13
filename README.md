@@ -1,2 +1,5 @@
-# ISDM Project
-This is an On-line Course Design System we have created as a part of our ISDM subject syllabus. The parts uploaded here only pertain to the frontend and backend. Our system looks to help teachers set up courses and help them evaluate in terms of the Bloom's Taxonomy for comprehensive teaching and evaluation. There are still some changes to be made but all the basic files including mySQL db files have been included. Put them in the ISDM folder of the XAMPP stack to make it work.
+# ISDM
+On-line Course Design System 
+This system would help a new teacher to add a course, to shedule the added cource and how they would like to teach.
+It would majorly depend on blooms taxonomy. 
+How they would like to evaluate is also one of the major tasks.
